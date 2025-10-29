@@ -1,27 +1,45 @@
-# Adult-Income-Prediction-Model
-This notebook performs an analysis of the Adult Income dataset, including data loading, cleaning, visualization, and the application of machine learning models (SVM, Decision Tree, and Random Forest) to predict income level.
-📘 Overview
+# 💼 Adult Income Prediction Model  
 
-A classification project predicting whether an individual earns above or below $50K/year using census data.
+### 📘 Overview  
+This project predicts whether an individual earns **more or less than \$50,000 per year** using demographic and employment data from the **UCI Adult Census dataset**.  
+It evaluates multiple machine learning algorithms to determine the most effective approach for income classification.
 
-⚙️ Key Features
+---
 
-Implemented Decision Tree, Random Forest, and SVM
+### 🎯 Objectives  
+- Build a predictive model using demographic and employment-related features.  
+- Compare the performance of **Decision Tree**, **Random Forest**, and **Support Vector Machine (SVM)**.  
+- Identify key factors influencing income level.  
+- Evaluate models using standard performance metrics.
 
-Data preprocessing with encoding and normalization
+---
 
-Model evaluation using ROC-AUC, precision, and recall
+### ⚙️ Workflow  
 
-🧠 Tools & Libraries
+#### 1. Data Preprocessing  
+- Handled missing and inconsistent entries.  
+- Encoded categorical variables such as gender, education, and occupation.  
+- Normalized numerical variables for optimal model performance.
 
-Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn
+#### 2. Model Development  
+- Implemented **Decision Tree**, **Random Forest**, and **SVM** classifiers.  
+- Tuned hyperparameters using **GridSearchCV** for optimal accuracy.
 
-📊 Results
+#### 3. Model Evaluation  
+- Compared results using **Accuracy**, **Precision**, **Recall**, **F1-score**, and **ROC-AUC**.  
+- Visualized confusion matrices and feature importance plots.
 
-Random Forest achieved the best accuracy
+---
 
-Visualized feature importance for interpretability
+### 🧠 Tools & Libraries  
+- **Python**  
+- **Pandas**, **NumPy**, **Scikit-learn**  
+- **Matplotlib**, **Seaborn**
 
-💡 Insight
+---
 
-Demonstrates model selection trade-offs between complexity and interpretability in classification tasks.
+### 📊 Results  
+- **Random Forest** delivered the best performance overall.  
+- **SVM** showed strong performance after feature normalization.  
+- Most influential features: **educ**
+
